@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1::before {
+      content: "Hello";
+      color: burlywood;
+      font-size: 12px;
+      background-color: cornflowerblue;
+    }
+
+    .special-effect::after {
+      content: "Bye";
+      font-size: 15px;
+      background-color: red;
+    }
+    body{
+      counter-reset: section;
+    }
+    p::before{
+      counter-increment: section;
+      content: "Crush " counter(section) ": ";
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pseudo Class</h1>
+  <h1 class="special-effect">Normal Class</h1>
+  <h1 class="special-effect">Vodro Class</h1>
+  <input name="email" type="text">
+  <br>
+  <input name="password" type="text">
+
+  </br>
+  <a href="www.youtube.conm">YouTube></a>
+  <a href="www.play.google.com">Google Play</a>
+    <p>Alia</p>
+    <p>Dalia</p>
+    <p>Malia</p>
+    <p>Salia</p>
+    <p>Jalia</p>
+    <p>Kalia</p>
+    <p>Falaia</p>
+    <p>Nalia</p>
+</body>
+
+</html>
